@@ -83,7 +83,7 @@
   }
   
   #about img {
-    max-width: 40%; /* Restrict image width to 40% of the section */
+    max-width: 25%; /* Restrict image width to 40% of the section */
     border-radius: 10px; /* Optional: Rounded corners for the image */
   }
   
