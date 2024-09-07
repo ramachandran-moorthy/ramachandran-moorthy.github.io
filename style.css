@@ -25,46 +25,25 @@
     position: fixed;
     top: 0;
     left: 0;
-    display: flex; /* Make nav a flex container */
-    justify-content: space-between; /* Space out the logo and links */
-    align-items: center; /* Center the logo and links vertically */
-    padding: 15px 10px; /* Add padding around the nav */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 15px 20px;
     z-index: 1000;
   }
 
   nav img.nav-logo {
     max-height: 40px;
     padding: 0 20px;
-    z-index: 1001;
+    z-index: 1000;
   }
-
-  .social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Space between text and social icons */
-  }
-  
-  .social-links a {
-    display: inline-block;
-    margin: 0 15px; /* Space between icons */
-  }
-  
-  .social-links img {
-    width: 40px; /* Adjust the size of the icons */
-    height: auto;
-    transition: transform 0.3s ease; /* Add hover effect */
-  }
-  
-  .social-links a:hover img {
-    transform: scale(1.1); /* Slightly enlarge the icons on hover */
-  }
-  
 
   nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    padding: 1rem 0;
+    padding-right: 50px;
+    padding-top: 1rem;
     background: #000;
     position: fixed;
     top: 0;
@@ -91,16 +70,25 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
-  
-  .btn {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
   
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .social-links img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
   section {
     padding: 50px;
   }
@@ -169,17 +157,3 @@
     border-radius: 5px;
   }
   
-  .contact-info {
-    list-style: none;
-  }
-  
-  .contact-info li {
-    margin: 10px 0;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: white;
-  }
