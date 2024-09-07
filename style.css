@@ -21,32 +21,64 @@
   
   nav {
     width: 100%;
-    background-color: #222;
+    background-color: #000;
     position: fixed;
     top: 0;
     left: 0;
+    display: flex; /* Make nav a flex container */
+    justify-content: space-between; /* Space out the logo and links */
+    align-items: center; /* Center the logo and links vertically */
+    padding: 15px 10px; /* Add padding around the nav */
     z-index: 1000;
   }
+
+  nav img.nav-logo {
+    max-height: 40px;
+    padding: 0 20px;
+    z-index: 1001;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Space between text and social icons */
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px; /* Space between icons */
+  }
+  
+  .social-links img {
+    width: 40px; /* Adjust the size of the icons */
+    height: auto;
+    transition: transform 0.3s ease; /* Add hover effect */
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.1); /* Slightly enlarge the icons on hover */
+  }
+  
 
   nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 1rem 0;
-    background: #222;
+    background: #000;
     position: fixed;
     top: 0;
     width: 100%;
   }
   
   nav ul li {
-    margin: 0 20px;
+    margin: 0 30px;
   }
   
   nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
   }
   
@@ -74,21 +106,21 @@
   }
 
   #about {
-    display: flex; /* Create a side-by-side layout */
-    justify-content: space-around; /* Add spacing between the image and text */
-    align-items: center; /* Vertically center the content */
-    height: 100vh; /* Full-page height */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
     padding: 50px;
-    text-align: left; /* Align the text to the left */
+    text-align: left;
   }
   
   #about img {
-    max-width: 25%; /* Restrict image width to 40% of the section */
-    border-radius: 10px; /* Optional: Rounded corners for the image */
+    max-width: 25%;
+    border-radius: 10px;
   }
   
   #about .about-text {
-    max-width: 50%; /* Restrict text width to 50% */
+    max-width: 50%;
   }
   
   #about h2 {
