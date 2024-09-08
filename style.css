@@ -62,7 +62,12 @@
   }
   
   .header-content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .header-content h2 {
+    font-size: 1.8rem;
     margin-bottom: 10px;
   }
   
@@ -103,15 +108,16 @@
   }
   
   #about img {
-    max-width: 25%;
+    max-width: 20%;
     border-radius: 10px;
   }
   
   #about .about-text {
-    max-width: 50%;
+    max-width: 65%;
   }
   
   #about h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
   }
   
@@ -120,8 +126,75 @@
     line-height: 1.6;
   }
   
+  #ee {
+    background: url('bgimage.jpg') no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+    display:block;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #ee .education {
+    max-width: 40%;
+  }
+
+  #ee .experience {
+    max-width: 40%;
+  }
+
+  #ee h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #f9f9f9;
+  }
   
-  #projects, #skills, #contact {
+  .ee-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .experience, .education {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .experience h3, .education h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .experience ul, .education ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .experience ul li, .education ul li {
+    margin-bottom: 20px;
+  }
+  
+  .experience ul li h4, .education-column ul li h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .experience ul li p, .education ul li p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .ee-container ul li p:last-child {
+    margin-bottom: 0;
+  }
+  
+  #projects {
     text-align: center;
   }
   

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My Portfolio</title>
+  <title>Ram's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,13 +15,13 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#ee">Experience & Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
       </ul>
     </nav>
     <div class="header-content">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm Ramachandran Moorthy, a Software Developer.</p>
+      <h1>Hi! I'm Ramachandran Moorthy</h1>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/ramachandran-moorthy" target="_blank" class="btn-linkedin">
           <img src="linkedin-logo.svg" alt="LinkedIn">
@@ -29,7 +29,7 @@
         <a href="https://github.com/ramachandran-moorthy" target="_blank" class="btn-github">
           <img src="github-logo.svg" alt="GitHub">
         </a>
-        <a href="Ramachandran_Moorthy_Resume.pdf" target="_blank" class="btn-resume">
+        <a href="Ramachandran_Moorthy_Resume.pdf" download class="btn-resume">
           <img src="download-logo.svg" alt="Resume">
         </a>
       </div>
@@ -41,12 +41,47 @@
     <img src="my_photo.jpeg" alt="My Photo">
     <div class="about-text">
       <h2>About Me</h2>
-      <p>Hi! I’m Ramachandran Moorthy. I am pursuing an MTech degree in Computer Science from IIIT Hyderabad.</p>
-      <p>I thoroughly enjoy lively and enriching discussions on tech.</p>
-      <p>I have over 2 years of experience in Java and Spring Boot and am looking for exciting opportunities 
-        to explore, contribute and grow.</p>
+      <p>
+        After 2 years' experience in Java and Spring Boot, I am pursuing an MTech degree in Computer Science from IIIT Hyderabad.
+        I like to learn by building projects and tackling complex problems. 
+      </p>
+      <p>Other than academics, I also enjoy playing sports, listening to music and reading books.</p>
     </div>
   </section>
+
+  <!-- Experience and Education Section -->
+  <section id="ee">
+    <h2>Experience & Education</h2>
+    <div class="ee-container">
+      <!-- Experience Column -->
+      <div class="experience">
+        <h3>Experience</h3>
+        <ul>
+          <li>
+            <h4>Systems Engineer at TCS Digital</h4>
+            <p>Oct 2021 - Dec 2023</p>
+            <p>Developed applications using Java, Spring Boot, and RESTful services. Collaborated with teams to deliver efficient software solutions comptible with existing mainframe systems.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Education Column -->
+      <div class="education">
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <h4>MTech in Computer Science, IIIT Hyderabad</h4>
+            <p>2024 - 2026</p>
+          </li>
+          <li>
+            <h4>BE in Information Technology, RAIT Navi Mumbai</h4>
+            <p>2017 - 2021</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Projects Section -->
   <section id="projects">
@@ -81,6 +116,6 @@
       <li>Node.js</li>
     </ul>
   </section>
-
+  <script src="script.js"></script>
 </body>
 </html>
